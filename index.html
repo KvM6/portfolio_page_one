@@ -57,12 +57,14 @@
 		<!-- HTML components -->
 		<nav id="navbar" class="navbar">
 	<div class="container">
-		<a href="#header" class="nav-brand">K:M</a>
-		<button class="hamburger hamburger--elastic" type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
+		<div class="nav-container">
+			<button class="nav-brand" type="button">KvM</button>
+			<button class="hamburger hamburger--elastic" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
 		<div class="nav-mobile">
 			<a href="#header" class="nav-mobile-link main-delay">Home</a>
 			<a href="#about-me" class="nav-mobile-link main-delay">About Me</a>
@@ -70,12 +72,14 @@
 			<a href="#contact" class="nav-mobile-link main-delay">Contact</a>
 		</div>
 	</div>
+	<div class="nav-transition-left"></div>
+	<div class="nav-transition-right"></div>
 </nav>
 		<header id="header" class="header">
 	<div class="rectangle-two"></div>
 	<div class="rectangle-one">
 		<div class="container">
-			<h1 class="header-title">K:M</h1>
+			<h1 class="header-title">KvM</h1>
 			<p class="header-text">Music Producer & Hybrid DJ</p>
 		</div>
 	</div>
@@ -89,68 +93,82 @@
 	</div>
 	<div class="rectangle-two">
 		<h2 class="about-me-title">About Me</h2>
-		<p title="p-one" class="about-me-text">Hi, I am Kamil aka K:M. I have started producing electronic music at end of 2018. That was a time where I focused on searching my style and uploading my works on SoundCloud as much as I can.</p>
-		<p title="p-two" class="about-me-text">Everything In mind to create Live Performance full of my own music.</p>
+		<div class="text-container">
+			<p title="p-one" class="about-me-text"></p>
+			<p title="p-two" class="about-me-text"></p>
+		</div>
 		<div class="container">
-			<button class="button-box button-default">
-				<div class="arrow arrow-left"></div>
+			<button class="button-box about-me-button-left button-default">
+				<div class="arrow arrow-left about-arrow-left"></div>
 			</button>
-			<button class="button-box button-pointer">
-				<div class="arrow arrow-right"></div>
+			<button class="button-box about-me-button-right button-pointer">
+				<div class="arrow arrow-right about-arrow-right"></div>
 			</button>
 		</div>
 	</div>
 </section>
 	<section id="my-works" class="my-works">
 	<div class="rectangle-two">
-		<div class="container">
-			<div class="links-box">
-				<a href="" class="soundcloud"></a>
-				<a href="" class="mixcloud"></a>
-				<a href="" class="bandcamp"></a>
-			</div>
+		<div class="links-container">
+			<a href=""
+				><div class="links-box"><div class="link-icon soundcloud"></div></div
+			></a>
+			<a href=""
+				><div class="links-box"><div class="link-icon youtube"></div></div
+			></a>
+			<a href=""
+				><div class="links-box"><div class="link-icon bandcamp"></div></div
+			></a>
 		</div>
 	</div>
 	<div class="rectangle-one">
-		<h2 class="my-works-title">My Works</h2>
-		<p class="p-works-one">
-			All my productions, sets and mixes are avalible on few platforms like
-			Soundcloud, Mixcloud and Bandcamp.
-		</p>
+		<h2 class="my-works-title"></h2>
+		<div class="text-container">
+			<p title="p-one" class="my-works-text"></p>
+		</div>
 		<div class="container">
-			<button class="button-box button-default">
-				<div class="arrow arrow-left"></div>
+			<button class="button-box my-work-button-left button-default">
+				<div class="arrow arrow-left my-work-arrow-left"></div>
 			</button>
-			<button class="button-box button-pointer">
-				<div class="arrow arrow-right"></div>
+			<button class="button-box my-work-button-right button-pointer">
+				<div class="arrow arrow-right my-work-arrow-right"></div>
 			</button>
 		</div>
 	</div>
 </section>
 	<section id="contact" class="contact">
-    <div class="section-margin"></div>
-    <div class="rectangle-two">
-        <p class="contact-text">You can also dm me directly there:</p>
-        <p class="contact-text-mail">livekvm@gmail.com</p>
-    </div>
-    <div class="rectangle-one">
-        <div class="media-container soundcloud">
-            <a href=""><i class="fa-brands fa-soundcloud"></i><p>SoundCloud</p></a>
-        </div>
-        <div class="media-container bandcamp">
-            <a href=""><i class="fa-brands fa-bandcamp"></i><p>BandCamp</p></a>
-        </div>
-        <div class="media-container instagram">
-            <a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
-        </div>
-    
-    </div>
-    <div class="contact-position">
-        <div class="container">
-            <h2 class="contact-title">Contact</h2>
-        </div>
-    </div>
-</section></main>
+	<div class="section-margin"></div>
+	<div class="rectangle-two">
+		<p class="contact-text">You can also dm me directly there:</p>
+		<p class="contact-text-mail">livekvm@gmail.com</p>
+	</div>
+	<div class="rectangle-one">
+		<div class="media-container soundcloud">
+			<a href=""
+				><i class="fa-brands fa-soundcloud"></i>
+				<p>SoundCloud</p></a
+			>
+		</div>
+		<div class="media-container bandcamp">
+			<a href=""
+				><i class="fa-brands fa-bandcamp"></i>
+				<p>BandCamp</p></a
+			>
+		</div>
+		<div class="media-container instagram">
+			<a href=""
+				><i class="fa-brands fa-instagram"></i>
+				<p>Instagram</p></a
+			>
+		</div>
+	</div>
+	<div class="contact-position">
+		<div class="container">
+			<h2 class="contact-title">Contact</h2>
+		</div>
+	</div>
+</section>
+</main>
 		<footer class="footer">
 	<!-- <div class="section-margin"></div> -->
 	<div class="footer-container">
